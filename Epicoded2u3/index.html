@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sviluppo di una pagina web - Blog Epicode</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Quicksand&family=Raleway:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img src="./assets/epicode.png" alt="logo">
+        <h1>Epicode - Il blog dei devolopers</h1>
+        <nav>
+            <a href="#home" class="custom-link">Home</a>
+            <a href="#articoli" class="custom-link">Articoli</a>
+            <a href="#job" class="custom-link">Job</a>
+        </nav>
+        <i class="fa-solid fa-magnifying-glass fa-beat-fade fa-lg" style="color: #030203;"></i>
+    </header>
+
+    <main>
+        <section id="sezione1">
+            <article id="articoli">
+                <h2>Come creare un template per i post</h2>
+                <i><strong>di Mario Rossi - pubblicato il 25-10-2020</strong></i>
+                <p>La prima cosa da fare è suddividere in blocchi logici la pagina, identificando le parti comuni da applicare a tutte le pagine</p>
+                <p><u>Le varie aree saranno quindi suddivise in:</u></p>    
+                <ul>
+                    <li><strong>Contenuti di intestazione del tag &lt;header&gt;;</strong></li>
+                    <li><strong>Contenuti centrali variabili del tag &lt;main&gt;</strong> </li>
+                    <li><strong>Contenuti di fine pagina comuni, da inserire nel tag &lt;footer&gt;</strong></li>
+                    <li><strong>Formattazione del codice</strong></li>
+                </ul>    
+            
+                <p>Il testo dell'articolo dovrà essere formattato per identificare tutte le parti da selezionare
+                    con i CSS. Perciò i passi saranno:</p>
+                <ul>
+                    <li><strong>Progettare su carta il markup finale, assegnango ad ogni specifico testo il tag appropriato</strong> </li>
+                    <li><strong>Scrivere l'HTML dei tag esterni a quelli interni e dall'alto verso il basso</strong></li>
+                    <li><strong>Applicare gli stili CSS</strong></li>
+                    <li><strong>L'applicazione di stili CSS è cresciuta negli anni fino a raggiungere la diffusione pressoché totale.</strong></li>
+                </ul>    
+            
+                <table>
+                    <caption>Diffusione dei CSS</caption>
+                    <thead>
+                        <tr>
+                            <th>Anno</th>
+                            <th>% di utillizzo</th>
+                            <th>Supporto browser</th>
+                        </tr>
+                    </thead>
+                    <tbody>  
+                        <tr>
+                            <td>2000</td>
+                            <td>20%</td>
+                            <td>17%</td>
+                        </tr>
+                        <tr>
+                            <td>2002</td>
+                            <td>35%</td>
+                            <td>22%</td>
+                        </tr>
+                        <tr>
+                            <td>2004</td>
+                            <td>45%</td>
+                            <td>42%</td>
+                        </tr>
+                        <tr>
+                            <td>2008</td>
+                            <td>80%</td>
+                            <td>51%</td>
+                        </tr>
+                        <tr>
+                            <td>2012</td>
+                            <td>100%</td>
+                            <td>76%</td>
+                        </tr>                
+                    </tbody>
+                </table>     
+                
+                <p>Un test di validazione potrà essere fatto tramite il tool online <a href="https://Epicode.com" target="_blank" class="custom-link"> di Epicode</a> dedicato allo scopo.
+                Una volta ottimizzato il tutto, avremo raggiunto il nostro obiettivo ed essere stati dei veri developers come loro:</p>
+                <iframe width="100%" height="500" src="https://www.youtube.com/embed/aBSZVeBRvDY?si=2DW7vZaTgPv7gWXp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    
+            </article>
+
+            <aside>
+                <h3>Articoli correlati</h3>
+                    <div class="cardconteiner">
+                        <img src="./assets/articolo1.jpg" alt="immagine articolo" class="immagini-articoli">
+                        <a href="#"> Validare il codice HTML</a>
+                        <p><b>Categoria:</b> develop</p>
+                        <p>Data: 16-9-2020</p>
+                        <button>Leggi articolo</button>
+                    </div>
+                
+                    <div class="cardconteiner">
+                        <img src="./assets/articolo2.jpg" alt="immagine articolo" class="immagini-articoli">
+                        <a href="#"> Correggere la sintassi</a>
+                        <p><b>Categoria:</b>: develop</p>
+                        <p>Data 30-9-2020</p>
+                        <button>Leggi articolo</button>
+                    </div>
+                
+
+                    <div class="cardconteiner">
+                        <img src="./assets/articolo3.jpg" alt="immagine articolo" class="immagini-articoli">
+                        <a href="#">Meno KB nella pagina</a>
+                        <p> <b>Categoria:</b> ottimizzazione</p>
+                        <p>Data: 30-9-2020</p>
+                        <button>Leggi articolo</button>
+                    </div>
+            </aside>
+        </section> 
+
+        <section id="newsletter">
+            <p>Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla nostra newsletter:</p>
+            <form>
+                <div>
+                    <input type="text" name="name" placeholder=" Inserisci il tuo nome">
+                </div>    
+                <div>
+                    <input type="number" placeholder="Inserisci il tuo numero">
+                </div>   
+                <div>
+                    <input type="email" placeholder="Inserisci la tua email">
+                </div> 
+                <button type="submit">Iscriviti!</button>       
+            </form>
+         </section>
+
+         <footer>
+            <img src="./assets/epicode.png" alt="logo">
+            <p>Blog Epicode &copy;2021</p>
+            <p>Testata online di Mario Rossi, registrata con prot. 213/2018</p>
+            <p>Via Luigi Einaudi 2 - Milano</p>
+            <p>P.IVA 00112233</p>
+            <p>Info@epicode.school <a href="mailto:info@epicode.school" target="_blank" class="custom-link">scrivi alla mail</p>
+         </footer>
+
+    </main>
+    <script src="https://kit.fontawesome.com/e73d858034.js" crossorigin="anonymous"></script>
+</body>
+</html>
